@@ -6,6 +6,8 @@ end
 
 -- CLAIM RANDOM BOOTH
 pcall(function()
+    game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Booths_WipeSavedListings"):FireServer()
+    task.wait(2)
     game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Booths_ClaimAnyBooth"):InvokeServer()
 end)
 
@@ -24,7 +26,7 @@ game:GetService("Players").LocalPlayer.Idled:Connect(function()
     vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
 end)
 
-local price = 51500 -- itt a price nigga
+local price = 52500 -- itt a price nigga
 
 local function sellItem()
     local Buckets = {} 
