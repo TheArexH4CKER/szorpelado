@@ -26,7 +26,7 @@ game:GetService("Players").LocalPlayer.Idled:Connect(function()
     vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
 end)
 
-local price = 36900 -- itt a price nigga
+local price = 30000 -- itt a price nigga
 
 local function sellItem()
     local Buckets = {} 
